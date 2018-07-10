@@ -21,4 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/shop', 'ListShopsController@index');
 //View a single instructor
-Route::get('/instructor/{id}', 'ListShopsController@show');
+Route::get('/shop/{id}', 'ListShopsController@show');
