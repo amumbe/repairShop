@@ -14,7 +14,7 @@ class ListShopsController extends Controller
      */
     public function index()
     {
-        $shops = list_shops::all();
+        $shops = listShops::all();
         return $shops;
     }
 
