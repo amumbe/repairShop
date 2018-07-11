@@ -30,5 +30,5 @@ Route::get('/instructor/{id}', 'ListShopsController@show');
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 
-);
+
 
