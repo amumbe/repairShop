@@ -22,3 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/listShop', 'ListShopsController@index');
 //View a single instructor
 Route::get('/listShop/{id}', 'ListShopsController@show');
+Route::post('login', 'API\UserController@login');
+Route::post('register', 'API\UserController@register');
+
+Route::group(['middleware' => 'auth:api']), function (){
+Route::post('details', 'API\UserController@details');
+});
