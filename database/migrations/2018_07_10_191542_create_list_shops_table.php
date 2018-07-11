@@ -19,6 +19,7 @@ class CreateListShopsTable extends Migration
             $table->string('openingTime');
             $table->string('closingTime');
             $table->string('name')->unique();
+            $table->string('location');
         });
     }
 
