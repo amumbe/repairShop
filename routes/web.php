@@ -19,6 +19,6 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home'); 
 
-Route::get('/shop', 'ListShopsController@index');
+Route::get('/listShop', 'ListShopsController@index');
 //View a single instructor
-Route::get('/shop/{id}', 'ListShopsController@show');
+Route::get('/listShop/{id}', 'ListShopsController@show');
